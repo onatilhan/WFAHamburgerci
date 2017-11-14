@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MenuSchema"
+    targetNamespace="http://tempuri.org/MenuSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/MenuSchema.xsd"
+    xmlns:mstns="http://tempuri.org/MenuSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:element name ="MenuSchema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Menu" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name ="MenuAdi" type="xs:string"></xs:element>
+              <xs:element name ="Fiyati" type="xs:decimal"></xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
